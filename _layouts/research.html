@@ -1,0 +1,159 @@
+---
+title: Research
+---
+
+<html>
+
+<head>
+    <title>Haohao Sun</title>
+    <meta charset='UTF-8'>
+    <meta content='width=device-width, initial-scale=1' name='viewport' />
+
+    <meta name='description'
+        content='Haohao Sun is a postdoctoral researcher at the School of Atmospheric Sciences, Nanjing University.'>
+    <!-- A decent browser will parse this fine:
+         https://webmasters.stackexchange.com/questions/92744. -->
+    <meta name='keywords' content='
+        data assimilation,
+        paleoclimate
+        machine learning
+    '>
+    <meta name='author' content='Haohao Sun'>
+
+    <link rel='shortcut icon' href='/favicon.png?v=e' />
+    <link href='/css/blog.css' rel='stylesheet' />
+    <link href='/css/trac.css' rel='stylesheet' />
+    <link href='/css/markdown.css' rel='stylesheet' />
+
+    <!-- {% include mathjax.html %} -->
+</head>
+
+<body>
+    <div class='nav'>
+        <ul class='wrap'>
+            <li><a href='/'>Home</a></li>
+            <li><a href='https://scholar.google.com/citations?user=2bIph3YAAAAJ&hl=en' target='_blank'>Google
+                    Scholar</a></li>
+        </ul>
+    </div>
+
+    <div id='blog' class='wrap'>
+        <!-- <h2>Research</h2> -->
+
+        <p>
+            My research focuses on <em>paleoclimate data assimilation (PDA)</em>, <em>climate field reconstruction</em>,
+            and the <em>integration of
+                artificial intelligence (AI) with data assimilation</em>. I am currently working on climate
+            reconstructions of the Last
+            Millennium to improve our understanding of climate variability and dynamics across multiple timescales.
+        </p>
+        <!-- 
+            <ol>
+                <li>
+                    <strong>Data assimilation theory and algorithms.</strong>
+                    Operational DA algorithms in high dimensions often rely on strong simplifying assumptions
+                    (e.g., Gaussianity, linearity, independence) to remain computationally feasible, which can introduce large
+                    approximation errors. I develop <em>analytically accurate yet computationally tractable</em> DA algorithms
+                    that relax these assumptions, especially in nonlinear and non-Gaussian settings.
+                </li>
+
+                 <li>
+                    <strong>Surrogate modeling of complex systems.</strong>
+                    Conventional physics-based models are interpretable and principled, but they rely on extensive domain
+                    knowledge, expensive numerical simulations, and may fail to capture long-term statistics or rare events.
+                    I leverage recent advances in data-driven modeling to develop surrogate models that are
+                    <em>accurate</em>, <em>efficient</em>, and <em>robust</em>, while remaining compatible with data
+                    assimilation workflows.
+                </li>
+            </ol> -->
+        <ol>
+            <li>
+                <strong>Offline PDA.</strong>
+                Paleoclimate data assimilation is most commonly implemented in an <em>offline framework</em>, where
+                geological proxy records are combined with pre-computed climate model simulations. I developed an
+                <em>Integrated Hybrid
+                    Ensemble Kalman Filter (IHEnKF)</em> that combines small-scale flow-dependent and
+                large-scale climatological information, providing a computationally efficient framework while
+                maintaining high
+                reconstruction skill.
+            </li>
+
+            <li>
+                <strong>Online PDA.</strong>
+                By replacing the numerical climate model with an AI-based surrogate model, I developed an
+                online PDA framework based on IHEnKF that propagates proxy information forward in time. Furthermore, I
+                proposed
+                an <em>Integrated Hybrid Ensemble Kalman Smoother (IHEnKS)</em>, which assimilates future proxies to
+                further improve the
+                reconstruction of past climate states.
+            </li>
+        </ol>
+
+        <div id='posts' class='section'>
+            <div class='post-row'>
+                <p class='post-title'>
+                <h3>In Revision</h3>
+                </p>
+
+                <p class='post-subtitle'>
+                    An Ensemble Kalman Smoother for Online Paleoclimate Data Assimilation<br>
+                    <strong>Haohao Sun</strong>, Lili Lei, Zhe-Min Tan, Liang Ning, and Zhengyu Liu
+                    <br>
+                    <em>Journal of Advances in Modeling Earth Systems (JAMES)</em>, 2026
+                </p>
+
+                <p class='post-title'>
+                <h3>Selected Publications</h3>
+                </p>
+
+                <p class='post-subtitle'>
+                    <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025MS005686">Strongly
+                        Coupled Data Assimilation for Paleoclimate Reconstruction Using Deep Learning-Based
+                        Models</a><br>
+                    Lili Lei, <strong>Haohao Sun</strong>, Zhe-Min Tan, Liang Ning, and Zhengyu Liu
+                    <br>
+                    <em>Journal of Advances in Modeling Earth Systems (JAMES)</em>, 2025
+                </p>
+
+                <p class='post-subtitle'>
+                    <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024MS004675">An Online Paleoclimate
+                        Data Assimilation with a Deep Learning-ased Network</a><br>
+                    <strong>Haohao Sun</strong>, Lili Lei, Zhengyu Liu, Liang Ning, and Zhe-Min Tan
+                    <br>
+                    <em>Journal of Advances in Modeling Earth Systems (JAMES)</em>, 2025
+                </p>
+
+                <p class='post-subtitle'>
+                    <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022MS003414">A Hybrid Gain Analog
+                        Offline EnKF for Paleoclimate Data Assimilation</a><br>
+                    <strong>Haohao Sun</strong>, Lili Lei, Zhengyu Liu, Liang Ning, and Zhe-Min Tan
+                    <br>
+                    <em>Journal of Advances in Modeling Earth Systems (JAMES)</em>, 2024
+                </p>
+
+                <p class='post-subtitle'>
+                    <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021MS002674">An Analog Offline EnKF
+                        for
+                        Paleoclimate Data Assimilation</a><br>
+                    <strong>Haohao Sun</strong>, Lili Lei, Zhengyu Liu, Liang Ning, and Zhe-Min Tan
+                    <br>
+                    <em>Journal of Advances in Modeling Earth Systems (JAMES)</em>, 2022
+                </p>
+
+                <p class='post-subtitle'>
+                    <a href="https://link.springer.com/article/10.1007/s11430-023-1229-7">The importance of data
+                        assimilation components for initial conditions and subsequent error growth</a><br>
+                    Zhongrui Wang, <strong style="font-weight: bold;">Haohao Sun</strong>, Lili Lei, and Zhe-Min Tan
+                    <br>
+                    <em>Science China Earth Sciences</em>, 2023
+                </p>
+
+            </div>
+
+            <small><em>* Denotes joint authorship.</em></small>
+        </div>
+    </div>
+
+</body>
+
+</html>
