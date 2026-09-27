@@ -30,3 +30,6 @@ end
 
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
+
+# Required to serve Jekyll with Ruby 3, where WEBrick is no longer bundled.
+gem "webrick", "~> 1.8"

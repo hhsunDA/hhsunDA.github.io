@@ -1,0 +1,200 @@
+%------------------------
+% Resume Template
+% Author : Anubhav Singh
+% Github : https://github.com/xprilion
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,26pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1.5in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-15pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Haohao Sun}} & Email: \href{mailto:}{hhsun@nju.edu.cn}\\
+% {} & Mobile:~~~+86-153-6610-0021 \\
+{} & Website: {hhsunDA.github.io} \\
+\end{tabular*}
+
+%-----------ACADEMIC APPOINTMENTS-----------------
+\section{Academic Appointments}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Nanjing University}{Nanjing, China}
+      {Postdoctoral Researcher}{2026--Present}
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+       {Nanjing University}{Nanjing, China}
+      {Ph.D. - Meteorology}{Sep 2020 - June 2026}\\
+      {\textit{{\newline{}Advisor: Prof. Lili Lei}}}
+    \resumeSubheading
+       {Nanjing University}{Nanjing, China}
+      {B.S. - Atmospheric Science}{Sep 2016 - Jun 2020}
+  \resumeSubHeadingListEnd
+\vspace{+0pt}
+
+%-----------Interests-----------------
+
+\section{Research Interests}
+
+My research focuses on paleoclimate data assimilation (PDA), climate field reconstruction, and the integration of artificial intelligence (AI) with data assimilation. I am currently working on climate reconstructions of the Last Millennium to improve our understanding of climate variability and dynamics across multiple timescales.
+
+\vspace{0.5em}
+
+\hspace*{2em}\textbf{1. Offline PDA:} Paleoclimate data assimilation is most commonly implemented in an \emph{offline} framework, where geological proxy records are combined with pre-computed climate model simulations. I developed an Integrated Hybrid Ensemble Kalman Filter (IHEnKF) that combines small-scale flow-dependent and large-scale climatological information, providing a computationally efficient framework while maintaining high reconstruction skill.
+
+\vspace{0.5em}
+
+\hspace*{2em}\textbf{2. Online PDA:} By replacing the numerical climate model with an AI-based surrogate model, I developed an \emph{online} PDA framework based on IHEnKF that propagates proxy information forward in time. Furthermore, I proposed an Integrated Hybrid Ensemble Kalman Smoother (IHEnKS), which assimilates future proxies to further improve the reconstruction of past climate states.
+
+
+%-----------Publications-----------------
+\section{Publications}
+\resumeSubHeadingListStart
+\item{\textbf{Sun, H.}, L. Lei, Z. Tan, L. Ning, and Z. Liu, 2026 ''An Ensemble Kalman Smoother for Online Paleoclimate Data Assimilation'', \textit{J. Adv. Model. Earth Syst.}, \textbf{18}, e2025MS005730, https://doi.org/10.1029/2025MS005730.}
+
+\item{Lei L., \textbf{Sun, H.}, Z. Tan, L. Ning, and Z. Liu, 2026 ''Strongly Coupled Data Assimilation for Paleoclimate Reconstruction Using Deep Learning-Based Models.'', \textit{J. Adv. Model. Earth Syst.}}, \textbf{18},  e2025MS005686, https://doi.org/10.1029/2025MS005686. 
+
+\item{\textbf{Sun, H.}, L. Lei, Z. Liu, L. Ning, and Z. Tan, 2025 ''An Online Paleoclimate Data Assimilation with a Deep Learning-based Network'', \textit{J. Adv. Model. Earth Syst.}}, \textbf{17}, e2024MS004675, https://doi.org/10.1029/2024MS004675. 
+
+\item{\textbf{Sun, H.}, L. Lei, Z. Liu, L. Ning, and Z. Tan, 2024 ''A Hybrid Gain Analog Offline EnKF for Paleoclimate Data Assimilation'', \textit{J. Adv. Model. Earth Syst.}}, \textbf{16}, e2022MS003414, https://doi.org/10.1029/2022MS003414.
+
+\item{\textbf{Sun, H.}, L. Lei, Z. Liu, L. Ning, and Z. Tan, 2022 ''An Analog Offline EnKF for Paleoclimate Data Assimilation'', \textit{J. Adv. Model. Earth Syst.}}, \textbf{14}, e2021MS002674, https://doi.org/10.1029/2021MS002674.
+
+\item{Z. Wang*, \textbf{H. Sun}*, L. Lei, Z. Tan, and Y. Zhang, 2023 ''The Importance of Data Assimilation Components for Initial Conditions and Subsequent Error Growth'', \textit{Sci China Earth Sci.}}, \textbf{67}, 105-116, https://doi.org/10.1007/s11430-023-1229-7.
+
+\item{K. Chen, Z. Liu, L. Ning, J. Liu, L. Lei, M. E. Mann, M. Yan, W. Sun, \textbf{H. Sun}, W. Hu, P. Gu, Y. Bao, Y. Qin, F. Xing, L. Li, J. Du, and Q. Wen, 2026 ''Volcanic Eruptions Caused Weakening AMOC During the Preindustrial Past Millennium'', \textit{Nature Communications}, \textbf{17}, 8420, https://doi.org/10.1038/s41467-026-74873-5.}
+
+\item{F. Wu, L. Ning, Z. Liu, J. Liu, W. Hu, M. Yan, F. Xing, L. Lei, \textbf{H. Sun}, K. Chen, Y. Qin, B. Li, and C. Xu, 2025 ''A New Last Two Millennium Reanalysis Based on Hybrid Gain Analog Offline EnKF and an Expanded Proxy Database'', \textit{npj Climate and Atmospheric Science}, \textbf{8}, 62, https://doi.org/10.1038/s41612-025-00961-w.}
+
+\item{W. Hu, L. Ning, Z. Liu, J. Liu, F. Wu, M. Yan, L. Jiang, L. Lei, F. Xing, \textbf{H. Sun}, K. Chen, Y. Qin, W. Sun, Q. Wen, and B. Li, 2024 ''Reconstructing Tropical Monthly Sea Surface Temperature Variability by Assimilating Coral Proxy Datasets'', \textit{npj Climate and Atmospheric Science}, \textbf{7}, 261, https://doi.org/10.1038/s41612-024-00816-w.}
+\resumeSubHeadingListEnd
+{\small\textit{* Denotes joint authorship.}}
+
+
+%-----------Project Management-----------------
+\newpage
+\section{Project Management}
+\resumeSubHeadingListStart
+\item{National Natural Science Foundation of China(Basic Research Program for Young Students), 2024-2026 ''Ensemble-based Multi-scale Data Assimilation for Last Millennium
+Climate Reconstruction'', \textbf{leader}}
+\item{National Key Research and Development Program of China, 2023-2028 ''Data Assimilation Theory and Techniques for Holocene Climate Change in the Tropical Western Pacific'', participation}
+\resumeSubHeadingListEnd
+
+%-----------Conferences-----------------
+\section{Conferences}
+\resumeSubHeadingListStart
+\item{8th WMO Symposium on Data Assimilation \& 12th International Symposium on Data Assimilation (ISDA), Nanjing, China, Aug 31--Sep 4, 2026 (invited talk)}
+\item{European Geosciences Union (EGU) General Assembly, Vienna, Austria, May 3--8, 2026 (poster)}
+\item{106th American Meteorological Society (AMS) Annual Meeting, Houston, USA, Jan 25--29, 2026 (poster)}
+\item{11th International Symposium on Data Assimilation (ISDA), Melbourne, Australia, Sep 29--Oct 3, 2025 (poster)}
+\item{AGU23 Annual Meeting, American Geophysical Union (AGU), Online, Dec 11--15, 2023 (poster)}
+\item{102nd American Meteorological Society (AMS) Annual Meeting, Online, Jan 23--27, 2022 (talk)}
+\resumeSubHeadingListEnd
+
+%-----------Academic Service-----------------
+\section{Academic Service}
+\resumeSubHeadingListStart
+\item{Reviewer, \textit{Journal of Advances in Modeling Earth Systems (JAMES)}, 2026}
+\item{Reviewer, \textit{Atmospheric Science Letters (ASL)}, 2025}
+\resumeSubHeadingListEnd
+
+%-----------teaching-----------------
+\section{Teaching}
+\resumeSubHeadingListStart
+\resumeSubheading {Teaching Assistant}{Nanjing University}
+{Graduate course: Data Assimilation} {Spring 2022}
+\resumeSubheading {Teaching Assistant}{Nanjing University}
+{Undergraduate course: Dynamic Meteorology}{Fall 2021}
+\resumeSubHeadingListEnd
+\vspace{+0pt}
+
+%-----------Awards-----------------
+\section{Awards}
+\resumeSubHeadingListStart
+\item {National Scholarship - 2024, CNY 30000}
+\item {Presidential Scholarship - 2020, CNY 20000}
+\item {Environmental Planning Scholarship - 2022, CNY 5000}
+\resumeSubHeadingListEnd
+
+%-----------Skills Summary-----------------
+\section{Programming}
+MATLAB/Python(numpy, scipy, xarray, Tensorflow, Pytorch)/Fortran/Linux/C
+
+
+\end{document}
